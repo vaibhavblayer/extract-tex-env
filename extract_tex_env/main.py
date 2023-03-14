@@ -10,6 +10,7 @@ from .functions_tex import extract_tex_env
         '--inputfile',
         type=click.Path(),
         default="./main.tex",
+        show_default=True,
         help="Input file path"
         )
 @click.option(
@@ -17,6 +18,7 @@ from .functions_tex import extract_tex_env
         '--outputfile',
         type = click.Path(),
         default = "./tikz.tex",
+        show_default=True,
         help = "Output file path"
         )
 @click.option(
@@ -24,6 +26,7 @@ from .functions_tex import extract_tex_env
         '--environment',
         type=click.Choice(['tikzpicture', 'align*']),
         default="tikzpicture",
+        show_default=True,
         help="Environment to be extracted"
         )
 def main(inputfile, outputfile, environment):

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "extract-tex-env"
-version = "0.1.0"
-description = "A cli tool for extracting tex environment from a tex file."
+version = "0.1.1"
+description = "Turned on to show default values."
 authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
 readme = "README.md"
 packages = [{include = "extract_tex_env"}]
